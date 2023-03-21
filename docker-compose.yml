@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  pyfxeamt5:
+    container_name: pyfxeamt5
+    build:
+      context: ./../pyfxeamt5
+      dockerfile: ./../pyfxeamt5/Dockerfile
+    tty: true
+    volumes:
+      - ./../pyfxeamt5:/usr/src/app
